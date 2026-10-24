@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Bebas+Neue&display=swap');
+
+:root {
+  --primary: #A78BFA;
+  --primary-hover: #8B5CF6;
+  --primary-light: #2E1065;
+  --primary-text: #12081F;
+
+  --secondary: #171221;
+  --secondary-hover: #221B30;
+  --secondary-light: #0D0A14;
+  --secondary-text: #A78BFA;
+
+  --accent: #F472B6;
+  --accent-hover: #EC4899;
+  --accent-light: #500724;
+  --accent-text: #ffffff;
+
+  --success: #22C55E;
+  --success-hover: #16A34A;
+  --success-light: #DCFCE7;
+  --success-text: #15803D;
+
+  --error: #EF4444;
+  --error-hover: #DC2626;
+  --error-light: #FEE2E2;
+  --error-text: #B91C1C;
+
+  --warning: #F59E0B;
+  --warning-hover: #D97706;
+  --warning-light: #FEF3C7;
+  --warning-text: #B45309;
+
+  --info: #3B82F6;
+  --info-hover: #2563EB;
+  --info-light: #DBEAFE;
+  --info-text: #1D4ED8;
+
+  --background: #0D0A14;
+  --surface: #ffffff;
+  --surface-2: #171221;
+  --surface-3: #221B30;
+  --overlay: rgba(0,0,0,0.45);
+
+  --text: #EDE9F5;
+  --text-secondary: #ABA2C0;
+  --text-muted: #6F6785;
+  --text-inverse: #ffffff;
+  --text-link: #A78BFA;
+  --text-link-hover: #8B5CF6;
+
+  --border: #221B30;
+  --border-focus: #A78BFA;
+  --border-error: #EF4444;
+  --border-success: #22C55E;
+  --divider: #171221;
+
+  --btn-primary-bg: #A78BFA;
+  --btn-primary-hover: #8B5CF6;
+  --btn-primary-text: #12081F;
+  --btn-secondary-bg: #171221;
+  --btn-secondary-hover: #221B30;
+  --btn-secondary-text: #A78BFA;
+  --btn-secondary-border: #A78BFA;
+  --btn-danger-bg: #EF4444;
+  --btn-danger-hover: #DC2626;
+  --btn-danger-text: #ffffff;
+  --btn-danger-border: #EF4444;
+  --btn-ghost-hover: #2E1065;
+  --btn-ghost-text: #A78BFA;
+  --btn-radius: 10px;
+  --btn-sm-padding: 6px 14px;
+  --btn-md-padding: 10px 22px;
+  --btn-lg-padding: 14px 32px;
+  --btn-font-weight: 600;
+
+  --input-bg: #ffffff;
+  --input-bg-focus: #0D0A14;
+  --input-border: #221B30;
+  --input-focus: #A78BFA;
+  --input-error: #EF4444;
+  --input-success: #22C55E;
+  --input-text: #EDE9F5;
+  --input-placeholder: #6F6785;
+  --input-radius: 10px;
+  --input-padding: 10px 14px;
+  --input-font-size: 15px;
+
+  --card-bg: #ffffff;
+  --card-border: #171221;
+  --card-radius: 14px;
+  --card-padding: 24px;
+  --card-shadow: 0 2px 12px rgba(167,139,250,0.07);
+  --card-hover-shadow: 0 6px 24px rgba(167,139,250,0.15);
+
+  --table-header-bg: #2E1065;
+  --table-header-text: #A78BFA;
+  --table-row-hover: #0D0A14;
+  --table-border: #171221;
+  --table-row-even: #0D0A14;
+  --table-row-odd: #ffffff;
+
+  --badge-radius: 999px;
+  --badge-padding: 3px 10px;
+  --badge-font-size: 12px;
+  --badge-font-weight: 600;
+
+  --modal-bg: #ffffff;
+  --modal-radius: 18px;
+  --modal-padding: 32px;
+  --modal-shadow: 0 8px 40px rgba(167,139,250,0.18);
+
+  --menu-bg: #ffffff;
+  --menu-border: #171221;
+  --menu-radius: 12px;
+  --menu-shadow: 0 4px 20px rgba(167,139,250,0.12);
+  --menu-item-hover: #171221;
+  --menu-item-text: #EDE9F5;
+  --menu-item-padding: 10px 16px;
+
+  --tab-active-bg: #A78BFA;
+  --tab-active-text: #12081F;
+  --tab-inactive: #6F6785;
+  --tab-hover-text: #A78BFA;
+  --tab-radius: 8px;
+  --tab-padding: 8px 18px;
+
+  --sidebar-bg: #090610;
+  --sidebar-text: #ABA2C0;
+  --sidebar-text-active: #ffffff;
+  --sidebar-item-active: #A78BFA;
+  --sidebar-item-hover: rgba(167,139,250,0.15);
+  --sidebar-border: rgba(255,255,255,0.07);
+  --sidebar-w: 240px;
+  --sidebar-w-sm: 64px;
+
+  --header-bg: #ffffff;
+  --header-border: #171221;
+  --header-h: 64px;
+  --header-text: #EDE9F5;
+
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius: 8px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 18px;
+  --radius-2xl: 24px;
+  --radius-full: 9999px;
+
+  --shadow-xs: 0 1px 3px rgba(167,139,250,0.06);
+  --shadow-sm: 0 2px 8px rgba(167,139,250,0.08);
+  --shadow-md: 0 4px 16px rgba(167,139,250,0.10);
+  --shadow-lg: 0 8px 32px rgba(167,139,250,0.13);
+  --shadow-xl: 0 16px 48px rgba(167,139,250,0.18);
+
+  --font: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-heading: 'Bebas Neue', system-ui, sans-serif;
+  --font-mono: ui-monospace, 'Courier New', monospace;
+  --font-size-xs: 11px;
+  --font-size-sm: 13px;
+  --font-size-base: 15px;
+  --font-size-md: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 21px;
+  --font-size-2xl: 26px;
+  --font-size-3xl: 32px;
+  --font-size-4xl: 42px;
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 28px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  --content-max-w: 1100px;
+  --content-padding: 24px;
+  --transition: 0.18s ease;
+  --transition-slow: 0.35s ease;
+}
+
+.dark {
+  --background: #0D0A14;
+  --surface: #171221;
+  --surface-2: #1F1A2C;
+  --surface-3: #2B2440;
+  --overlay: rgba(0,0,0,0.65);
+  --text: #EDE9F5;
+  --text-secondary: #ABA2C0;
+  --text-muted: #6F6785;
+  --text-inverse: #171221;
+  --text-link: #C4B5FD;
+  --text-link-hover: #C4B5FD;
+  --border: #2B2440;
+  --border-focus: #C4B5FD;
+  --divider: #1F1A2C;
+  --card-bg: #171221;
+  --card-border: #2B2440;
+  --header-bg: #171221;
+  --header-border: #2B2440;
+  --input-bg: #1F1A2C;
+  --input-bg-focus: #2B2440;
+  --input-border: #2B2440;
+  --input-text: #EDE9F5;
+  --table-header-bg: #1F1A2C;
+  --table-row-even: #171221;
+  --table-row-odd: #1F1A2C;
+  --table-row-hover: #2B2440;
+  --modal-bg: #171221;
+  --menu-bg: #171221;
+  --menu-border: #2B2440;
+  --menu-item-hover: #1F1A2C;
+  --menu-item-text: #EDE9F5;
+  --tab-inactive: #6F6785;
+  --primary-light: #1F1A2C;
+  --secondary: #1F1A2C;
+  --secondary-hover: #2B2440;
+  --secondary-light: #171221;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: var(--font);
+  background: var(--background);
+  color: var(--text);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-normal);
+}
+h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); }
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: var(--radius-full); }
+::selection { background: var(--primary-light); color: var(--primary); }
+:focus-visible { outline: 2px solid var(--border-focus); outline-offset: 2px; }
