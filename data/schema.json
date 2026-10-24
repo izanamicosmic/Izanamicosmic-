@@ -1,1 +1,94 @@
-
+{
+  "appType": "website",
+  "category": "news",
+  "title": "MEDIA TIKTOK 666",
+  "description": "A professional movie and series streaming and download website with a poster grid, star ratings, view counts, bookmarks, watch history, VIP-locked posts, responsive banner ads and emoji-reaction comments for logged-in users.",
+  "slug": "media-tiktok-666",
+  "lang": [
+    "id"
+  ],
+  "fontFamily": "Plus Jakarta Sans",
+  "headingFamily": "Bebas Neue",
+  "fontLink": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Bebas+Neue&display=swap",
+  "pages": [
+    {
+      "name": "Home",
+      "title": "Beranda",
+      "info": "The home page of a dark cinematic streaming site. Section 1: a full-bleed featured-movie hero slider (3 slides from the newest Movie records) with backdrop image, oversized Bebas Neue title, star rating, view count, genre chips and two buttons 'Tonton Sekarang' (links to /watch?id=...) and a bookmark heart toggle; slides have back/next arrow buttons. Section 2: a responsive horizontal banner ad slot (AdBanner where placement = home_top and isActive = true), 728x90 on desktop, 320x100 on mobile, labelled 'Iklan'. Section 3: 'Terakhir Dilihat' – a horizontal scroll row of the logged-in user's latest WatchHistory records (poster, title, episode number, a thin progress bar); hidden for guests with a small prompt to log in. Section 4: 'Postingan Terbaru' – the main poster grid (2 columns mobile, 3 tablet, 5-6 desktop) of Movie records sorted by publishedAt, each card showing thumbnail, title, year, genre, gold star rating (e.g. 8.4), eye icon with view count (e.g. 12.5K), a 'Series'/'Film' badge, a bookmark icon button, and a gold lock badge 'VIP' when isVipOnly is true; filter chips above the grid by genre (Aksi, Drama, Horor, Komedi, Romantis, Anime) and by type, plus a search box; pagination with 'Sebelumnya' and 'Selanjutnya' buttons. Section 5: a mid-grid banner ad (placement = home_middle). Section 6: 'Daftar Judul A–Z' – a compact alphabetical title list with letter tabs. Section 7: a VIP band with a gold gradient: 'Gabung Member VIP – tanpa iklan, akses film terkunci, download HD', with a 'Join Member VIP' button that opens a 'Segera hadir – hubungi kami' modal. Header has the 'Masuk / Daftar' button and a 'Bookmark' link that opens a drawer listing the user's Bookmark records.",
+      "route": "/",
+      "lang": "id",
+      "home": true,
+      "auth": false,
+      "type": "page",
+      "seo": {
+        "title": "MEDIA TIKTOK 666 – Streaming & Download Film",
+        "description": "Nonton dan download film serta series terbaru dengan rating, jumlah view, bookmark dan akses VIP di MEDIA TIKTOK 666."
+      }
+    },
+    {
+      "name": "Watch",
+      "title": "Streaming & Download",
+      "info": "The dedicated streaming and download page for one Movie, loaded by id from the URL. Section 1: a 16:9 video player with dark frame; if the movie isVipOnly and the user is not a VIP (role 2), the player is replaced by a blurred backdrop with a gold lock icon, 'Konten Khusus Member VIP' and a 'Join Member VIP' button (opens a 'Segera hadir – hubungi kami' modal). On open, a WatchHistory record is saved for the logged-in user. Section 2: an episode bar for series – numbered Episode chips plus 'Episode Sebelumnya' and 'Episode Selanjutnya' navigation buttons; for films, back/next go to the previous/next movie. Section 3: title, year, genre, gold star rating, view count, bookmark toggle button ('Tambah ke Bookmark' / 'Tersimpan') and a synopsis. Section 4: a download box with buttons per quality (360p, 720p, 1080p from the download URLs), HD links locked for non-VIP. Section 5: a responsive banner ad (AdBanner placement = watch_below_player), 728x90 desktop and 320x100 mobile. Section 6: modern comment section – a count heading 'Komentar (24)', a rounded input with avatar that is disabled for guests and shows 'Masuk dengan Google atau Facebook untuk berkomentar'; each Comment card shows avatar, name, relative time, body, and an emoji reaction bar (👍 ❤️ 😂 😮 😢 🔥) with counts from CommentReaction, where logged-in users can toggle one reaction. Section 7: a sidebar (bottom on mobile) with a square ad (placement = watch_sidebar) and 'Rekomendasi' – 8 poster cards of the same genre.",
+      "route": "/watch",
+      "lang": "id",
+      "home": false,
+      "auth": false,
+      "type": "page",
+      "seo": {
+        "title": "Nonton & Download – MEDIA TIKTOK 666",
+        "description": "Streaming dan download film atau series favoritmu dalam kualitas HD, lengkap dengan episode, komentar dan bookmark."
+      }
+    },
+    {
+      "name": "Login",
+      "title": "Masuk / Daftar",
+      "info": "A full-screen split layout: on desktop the left half is a dark collage of blurred movie posters with the MEDIA TIKTOK 666 wordmark and the line 'Simpan bookmark, lanjutkan tontonan, dan ikut berkomentar'; the right half is a glassy card. The card has a sign in / sign up switch at the top. Primary actions are two large buttons 'Lanjutkan dengan Google' and 'Lanjutkan dengan Facebook' with brand icons, then an 'atau' divider and an email + password form (plus full name on sign up). Below: a small note that VIP membership is available after login. After login the user returns to the page they came from. On mobile the poster collage becomes a short top banner.",
+      "route": "/login",
+      "lang": "id",
+      "home": false,
+      "auth": false,
+      "type": "login",
+      "seo": {
+        "title": "Masuk atau Daftar – MEDIA TIKTOK 666",
+        "description": "Masuk dengan Google atau Facebook untuk menyimpan bookmark, riwayat tontonan dan berkomentar."
+      }
+    }
+  ],
+  "laterPages": [
+    "Bookmark Saya",
+    "Riwayat Tontonan",
+    "Member VIP",
+    "Daftar Genre"
+  ],
+  "design": {
+    "direction": "Midnight Neon Cinema",
+    "concept": "A near-black, poster-first streaming hub that feels like walking into a late-night cinema lit by neon signage. Posters do the talking; chrome stays quiet. A hot magenta-red accent drives actions, and gold is reserved strictly for ratings and VIP so premium always reads instantly.",
+    "layout": "Transparent top bar over a full-bleed hero slider that turns into a solid blurred bar on scroll; below, a wide contained content area with stacked rows and a dense poster grid. On the Watch page, a two-column layout: player and content on the left, ads and recommendations in a sticky right sidebar that drops below on mobile.",
+    "nav": "Left: the wordmark 'MEDIA TIKTOK 666' in Bebas Neue with the '666' in accent color. Center: Beranda, Film, Series, Genre links with an underline glow on active. Right: search icon that expands into a field, bookmark icon with count badge, a gold outlined 'VIP' pill button, and 'Masuk' button or user avatar. Mobile: a fixed bottom tab bar (Beranda, Cari, Bookmark, Akun) plus a side drawer for genres.",
+    "hero": "Full-bleed backdrop of the featured movie with a bottom-to-top black gradient, a giant condensed title, star rating, view count, genre chips, 'Tonton Sekarang' accent button and bookmark toggle; circular back/next arrows and dot indicators for 3 slides.",
+    "sections": "Hero (full-bleed) → thin banner ad strip → 'Terakhir Dilihat' horizontal row → genre filter chips → large poster grid → mid-grid ad → A–Z title list → gold VIP band (full-bleed) → footer with genres and disclaimer. Dark sections alternate with slightly lighter panel bands to separate rows.",
+    "typography": "Bebas Neue for oversized headings and section titles with wide tracking, small uppercase eyebrows in the accent color; Plus Jakarta Sans for everything else at compact sizes for dense metadata.",
+    "shapes": "Posters at 2:3 with 10px corners and a subtle inner border; cards lift with a soft glow shadow on hover; pill-shaped chips and buttons; hairline dividers in low-opacity white; glassy panels with backdrop blur for modals and the comment box.",
+    "imagery": "Poster thumbnails everywhere, full-bleed backdrops with heavy gradient overlays, blurred poster collages behind locked VIP content and on the login page.",
+    "motion": "Fade-up on scroll for rows, poster hover scale 1.04 with a play icon fading in, a slow marquee of trending titles under the hero, emoji pop animation when a reaction is tapped.",
+    "signature": "A glowing neon '666' badge and a running ticker marquee of 'Sedang Trending' titles in condensed uppercase type, plus gold lock ribbons diagonally across VIP posters."
+  },
+  "auth": {
+    "enabled": true,
+    "type": "mixed",
+    "hasUserRoles": true,
+    "roles": [
+      {
+        "id": 1,
+        "label": "Pengguna"
+      },
+      {
+        "id": 2,
+        "label": "Member VIP"
+      }
+    ]
+  },
+  "payments": {
+    "enabled": false
+  }
+}
